@@ -1,0 +1,14 @@
+armsupp.o: armsupp.c armdefs.h config.h armemu.h ../../include/ansidecl.h \
+ ../../include/libiberty.h ../../include/ansidecl.h
+
+armdefs.h:
+
+config.h:
+
+armemu.h:
+
+../../include/ansidecl.h:
+
+../../include/libiberty.h:
+
+../../include/ansidecl.h:
