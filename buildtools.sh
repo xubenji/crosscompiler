@@ -1,5 +1,5 @@
 apt-get install -y gcc make build-essential bison flex libgmp3-dev libmpc-dev 	libmpfr-dev texinfo libisl-dev clang *zlib zlib*
-
+apt-get install -y gdb-multiarch
 clang --target=aarch64-elf
 
 #wget https://ftpmirror.gnu.org/binutils/binutils-2.30.tar.gz

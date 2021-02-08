@@ -1,9 +1,0 @@
-armvirt.o: armvirt.c armos.h armdefs.h config.h ../../include/ansidecl.h
-
-armos.h:
-
-armdefs.h:
-
-config.h:
-
-../../include/ansidecl.h:
