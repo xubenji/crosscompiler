@@ -22,6 +22,7 @@
 # 使用visual code远程调试内核的方式有两种
 # 第一种是本地安装一个visual code客户端然后使用remote ssh插件连接到远程服务器
 # 这个方法相对第二种比较简单，但是缺点是本地需要安装一个visual code和xshell，所以能够支持这样调试的设备有限
+
   1，安装配置remote ssh  
      在插件栏搜索安装remote ssh  
      按住Ctrl+p打开活动栏搜索 C:/User/（windows用户名）/.ssh/config  
@@ -32,6 +33,7 @@
      安装gdb  
      点击run->Add configurationd  
      将以下内容复制粘贴进配置文件（不要复制减号并注意删除原有配置）  
+
 ------------------------------------------------------------------------------------------------------------------------------
 {
     // Use IntelliSense to learn about possible attributes.  
@@ -39,8 +41,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387  
 
         "version": "0.2.0",
-        "configurations": [
-        
+        "configurations": [  
         {
         "name": "GDB debug",
         "type": "cppdbg",
