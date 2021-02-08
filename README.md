@@ -36,38 +36,38 @@
 
 ------------------------------------------------------------------------------------------------------------------------------  
   
-{
+{  
     // Use IntelliSense to learn about possible attributes.  
     // Hover to view descriptions of existing attributes.  
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387  
-        "version": "0.2.0",
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387   
+        "version": "0.2.0",  
         "configurations": [  
-        {
-        "name": "GDB debug",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/kernel8.elf",
-        "args": [],
-        "stopAtEntry": true,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false,
-        "MIMode": "gdb",
-        "targetArchitecture": "arm64",
-        //"preLaunchTask": "build",
-        "setupCommands":
-        [
-        {
-        "description": "Enable pretty-printing for gdb",
-        "text": "-enable-pretty-printing",
-        "ignoreFailures": true
-        }
-        ],  
-        "miDebuggerPath": "/usr/bin/gdb-multiarch",
-        "miDebuggerServerAddress": "127.0.0.1:1234"
-        }
-        ]
-        }
+        {  
+        "name": "GDB debug",  
+        "type": "cppdbg",  
+        "request": "launch",  
+        "program": "${workspaceFolder}/kernel8.elf",  
+        "args": [],  
+        "stopAtEntry": true,  
+        "cwd": "${workspaceFolder}",  
+        "environment": [],  
+        "externalConsole": false,  
+        "MIMode": "gdb",  
+        "targetArchitecture": "arm64",  
+        //"preLaunchTask": "build",  
+        "setupCommands":  
+        [  
+        {  
+        "description": "Enable pretty-printing for gdb",  
+        "text": "-enable-pretty-printing",  
+        "ignoreFailures": true  
+        }  
+        ],    
+        "miDebuggerPath": "/usr/bin/gdb-multiarch",  
+        "miDebuggerServerAddress": "127.0.0.1:1234"  
+        }  
+        ]  
+        }  
   
 ---------------------------------------------------------------------------------------------------------------------------------  
   
@@ -75,6 +75,8 @@
         保存好以后使用xshell连接虚拟主机，然后在工作文件夹输入make run(注意：这个指令每个makefile都不同，需要具体查看makefile才能知道）    
         然后点击run->start Debugging   
         然后就可以开始调试了（虚拟主机如果延迟很高，等待时间或许会很长）  
+
+
 # 配置vs code online+网页访问ubuntu界面  
 # 在很多设备上我们无法安装xshell和vscode，这个时候我们就需要使用浏览器编辑代码  
 # 微软在2019年5月发布了vs code online，给出了在浏览器编辑代码的方案  
