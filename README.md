@@ -34,12 +34,12 @@
      点击run->Add configurationd  
      将以下内容复制粘贴进配置文件（不要复制减号并注意删除原有配置）  
 
-------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------  
+  
 {
     // Use IntelliSense to learn about possible attributes.  
     // Hover to view descriptions of existing attributes.  
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387  
-
         "version": "0.2.0",
         "configurations": [  
         {
