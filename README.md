@@ -25,8 +25,9 @@
 
   1，安装配置remote ssh  
      在插件栏搜索安装remote ssh  
-     按住Ctrl+p打开活动栏搜索 C:/User/（windows用户名）/.ssh/config  
-     打开文件编辑如下内容：  
+     点击右侧栏目中的小电视图标  
+     然后点击齿轮的东西，搜索框中会弹出config配置文件
+     点击config打开文件编辑如下内容：  
      Host （随便起个名字）  
      HostName （你服务器的ip地址）  
      User （登陆服务的用户名）  
