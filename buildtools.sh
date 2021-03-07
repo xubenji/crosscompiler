@@ -41,4 +41,7 @@ make -j4 all-gcc
 make install-gcc
 cd ..
 
+echo "All bin files would be /usr/local/cross-compiler/bin/. If tools were compiled correctly."
+echo "You can use gdb multiarch version like this: gdb-multiarch."
+
 
