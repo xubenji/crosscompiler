@@ -23,7 +23,7 @@
 # 第一种是本地安装一个visual code客户端然后使用remote ssh插件连接到远程服务器
 # 这个方法相对第二种比较简单，但是缺点是本地需要安装一个visual code和xshell，所以能够支持这样调试的设备有限
 
-  1，安装配置remote ssh  
+  1，在你本地的电脑安装配置remote ssh  
      在插件栏搜索安装remote ssh  
      点击右侧栏目中的小电视图标  
      然后点击齿轮的东西，搜索框中会弹出config配置文件
