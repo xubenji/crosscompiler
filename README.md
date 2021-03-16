@@ -31,7 +31,8 @@
      Host （随便起个名字）  
      HostName （你服务器的ip地址）  
      User （登陆服务的用户名）  
-     安装gdb  
+  2，连接到远程主机
+     并在远程主机上安装gdb  
      点击run->Add configurationd  
      将以下内容复制粘贴进配置文件（不要复制减号并注意删除原有配置）  
 
