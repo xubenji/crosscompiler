@@ -31,7 +31,7 @@
      Host （随便起个名字）  
      HostName （你服务器的ip地址）  
      User （登陆服务的用户名）  
-     Port  (你连接的服务器的端口号，更改了ssh端口号的同学一定要记得填写）
+     Port  (你连接的服务器的端口号，更改了ssh端口号的同学一定要记得填写）    
      IdentityFile (自动登录的ssh密匙文件，位置一般是.ssh/id_rsa, .ssh文件每个系统都不同一般是用户文件夹下，苹果的是"/Users/username/.ssh/id_rsa"）
      
   2，连接到远程主机
