@@ -117,5 +117,13 @@
           -u "$(id -u):$(id -g)" \  
           -e PASSWORD=’123456′ \  
           codercom/code-server:latest  
-          运行完成，就可以通过IP:8080访问  
+          运行完成，就可以通过IP:8080访问
+          
+ #苹果系统下终端实现X11窗口转发         
+ #很多时候我们需要使用终端来转发X11窗口实现查看操作系统屏幕中的内容，在windows系统下我们可以使用xshell+xmanager的方案来实现
+ #但是Xshell不支持MacOS，我们就需要使用其他的方法来实现转发X11窗口，
+ #首先，visusl code可是实现X11窗口转发，但是我安装了Remote X11插件以后还是不行
+ #然后我安装了XQuartx这个开源软件，在使用visual code转发X11窗口的时候需要先将XQuartx挂起才能转发，很奇怪。
+ #苹果终端连接远程服务器的时候SSH需要添加 -X 选项
+ 
 
