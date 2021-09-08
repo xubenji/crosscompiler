@@ -119,19 +119,19 @@
           codercom/code-server:latest  
           运行完成，就可以通过IP:8080访问
           
- #苹果系统下终端实现vscode X11窗口转发         
- #很多时候我们需要使用终端来转发X11窗口实现查看操作系统屏幕中的内容，在windows系统下我们可以使用xshell+xmanager的方案来实现。   
- #但是Xshell不支持MacOS，我们就需要使用其他的方法来实现转发X11窗口，
-          1, 安装Xquart
-             有两种安装方式，一种是直接源码下载安装，一种在terminal中安装。
-             在terminal中安装需要输入以下指令：
-             brew install xqurat
-          2, 在vscode中安装remote X11插件（并不是很确定这个一定需要安装，以防万一还是先装上）
-          3, 在服务器中修改～/.bashrc文件，添加：
-             export DISPLAY:localhost:10.0
-          4, 在MacOS中打开terminal并且连接上服务器，使用以下命令：（一定要连接，不连接vscode就无法转发）
-             ssh -X root@xxx.xxx.xxx.xxx 
-             现在你就可以在vscode中打开服务器上有窗口的程序了
+ # 苹果系统下终端实现vscode X11窗口转发         
+ # 很多时候我们需要使用终端来转发X11窗口实现查看操作系统屏幕中的内容，在windows系统下我们可以使用xshell+xmanager的方案来实现。   
+ # 但是Xshell不支持MacOS，我们就需要使用其他的方法来实现转发X11窗口，
+        1，安装Xquart
+        有两种安装方式，一种是直接源码下载安装，一种在terminal中安装。
+        在terminal中安装需要输入以下指令：
+        brew install xqurat
+        2， 在vscode中安装remote X11插件（并不是很确定这个一定需要安装，以防万一还是先装上）
+        3， 在服务器中修改～/.bashrc文件，添加：
+        export DISPLAY:localhost:10.0
+        4， 在MacOS中打开terminal并且连接上服务器，使用以下命令：（一定要连接，不连接vscode就无法转发）
+        ssh -X root@xxx.xxx.xxx.xxx 
+        现在你就可以在vscode中打开服务器上有窗口的程序了
 
              
  
