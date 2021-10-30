@@ -59,7 +59,7 @@
         "externalConsole": false,  
         "MIMode": "gdb",  
         "targetArchitecture": "arm64",  
-        //"preLaunchTask": "build",  
+        "preLaunchTask": "build",  
         "setupCommands":  
         [  
         {  
@@ -76,9 +76,24 @@
   
 ---------------------------------------------------------------------------------------------------------------------------------  
   
-        其中preLaunchTask是在debugger之前执行的任务，我们现在用不到，所以将其注释掉。    
-        保存好以后使用xshell连接虚拟主机，然后在工作文件夹输入make run(注意：这个指令每个makefile都不同，需要具体查看makefile才能知道）    
-        然后点击run->start Debugging   
+        然后在.vscode文件夹下添加一个名为tasks.json的文件。 如果有的话就不需要重新建了，最后把这段复制进去，label的名字要和prelaunch名字对应。
+        
+        {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": " gnome-terminal -e 'make debug'",
+            //"args": ["-g", "${workspaceFolder}/src/${fileBasename}", "-std=c++11", "-o", "${workspaceFolder}/build/${fileBasenameNoExtension}"]
+        },
+         ]
+        }    
+        
+        接下来你需要安装一个叫做gnome-terminal的东西，这是帮助你重新开一个终端运行make debug，安装以后再安装dbus-x11。
+        以上所有工作都做好以后点击run->start Debugging   
         然后就可以开始调试了（虚拟主机如果延迟很高，等待时间或许会很长）  
 
 
