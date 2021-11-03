@@ -95,7 +95,9 @@
         接下来你需要安装一个叫做gnome-terminal的东西，这是帮助你重新开一个终端运行make debug，安装以后再安装dbus-x11。
         以上所有工作都做好以后点击run->start Debugging   
         然后就可以开始调试了（虚拟主机如果延迟很高，等待时间或许会很长）  
-
+        如果发生了无法打开的错误，重新开的终端没有或者一闪而过，请执行以下命令：
+        dbus-uuidgen > /var/lib/dbus/machine-id
+        提示找不到dbus，你需要先安装dbus，apt-get install dbus
 
 # 配置vs code online+网页访问ubuntu界面  
 # 在很多设备上我们无法安装xshell和vscode，这个时候我们就需要使用浏览器编辑代码  
