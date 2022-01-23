@@ -145,7 +145,7 @@
            brew install xquratz
         2, 在vscode中安装remote X11插件（并不是很确定这个一定需要安装，以防万一还是先装上）
         3, 在服务器中修改～/.bashrc文件，添加：
-            export DISPLAY:localhost:10.0
+            export DISPLAY=localhost:10.0
         5, 先打开xquartz，记住，一定要先打开它，然后在它的终端里面输入
            ssh -Y root@xxx.xxx.xxx.xxx （一定要先做这一步，不然你一辈子也转发不了X11）
         4, 最后在VScode中打开terminal并且连接上服务器，使用以下命令：（一定要连接，不连接vscode就无法转发）
